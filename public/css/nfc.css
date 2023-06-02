@@ -1,0 +1,649 @@
+element.style {
+}
+.card {
+    margin-bottom: 1.875rem;
+    background-color: #fff;
+    transition: all .5s ease-in-out;
+    position: relative;
+    border: 0px solid transparent;
+    border-radius: 0.75rem;
+    box-shadow: 0px 12px 33px 0px rgba(62, 73, 84, 0.08);
+    height: calc(100% - 30px);
+}
+
+.p-2 {
+    padding: 0.5rem !important;
+}
+.overflow-hidden {
+    overflow: hidden !important;
+}
+.card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-color: #fff;
+    background-clip: border-box;
+    border: 1px solid rgba(0, 0, 0, 0.125);
+    border-radius: 0.75rem;
+}
+* {
+    outline: none;
+    padding: 0;
+}
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+feuille de style user-agent
+div {
+    display: block;
+}
+[data-typography="poppins"] {
+    font-family: 'poppins', sans-serif;
+}
+@media only screen and (max-width: 1400px)
+body {
+    font-size: 0.875rem;
+}
+body {
+    overflow-x: hidden;
+    height: 100%;
+    position: relative;
+    max-width: 100%;
+    font-size: 1rem;
+}
+body {
+    margin: 0;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-size: 0.875rem;
+    line-height: 1.5;
+    color: #7e7e7e;
+    text-align: left;
+    background-color: #ffffff;
+}
+:root {
+    --blue: #5e72e4;
+    --indigo: #6610f2;
+    --purple: #7d49eb;
+    --pink: #D43347;
+    --red: #EE3232;
+    --orange: #ff9900;
+    --yellow: #FFFA6F;
+    --green: #297F00;
+    --teal: #20c997;
+    --cyan: #3065D0;
+    --white: #fff;
+    --gray: #6c757d;
+    --gray-dark: #343a40;
+    --primary: #D43347;
+    --secondary: #392540;
+    --success: #2bc155;
+    --info: #2F4CDD;
+    --warning: #ffb800;
+    --danger: #f35757;
+    --light: #f4f4f4;
+    --dark: #3e4954;
+    --breakpoint-xs: 0;
+    --breakpoint-sm: 576px;
+    --breakpoint-md: 768px;
+    --breakpoint-lg: 992px;
+    --breakpoint-xl: 1200px;
+    --breakpoint-xxl: 1440;
+    --font-family-sans-serif: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    --font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+}
+html {
+    font-family: sans-serif;
+    line-height: 1.15;
+    -webkit-text-size-adjust: 100%;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+*::before {
+    margin: 0;
+    padding: 0;
+}
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+*::after {
+    margin: 0;
+    padding: 0;
+}
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+.red-heading{
+    color:#D43347
+}
+.square-component {
+    width: 300px; /* Définir la largeur souhaitée */
+    height: 200px; /* Définir la hauteur souhaitée */
+    background-color: #fffefe; /* Définir la couleur de fond souhaitée */
+    border: 1px solid #ffffff; /* Bordure de 1 pixel solide de couleur noire */
+    border-radius: 5%; /* Forme de cercle avec un rayon de 50% */
+    text-align: left; /* Centrer le contenu horizontalement */
+    padding: 30px; /* Ajouter un espace intérieur au contenu */
+    box-shadow: 0px 2px 8px rgba(82, 82, 82, 0.5);
+
+  }
+  
+  .square-component img {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 0; /* Ajouter un espace en bas de l'image */
+    margin-top: 0px; /* Supprimer la marge supérieure de l'image */
+  }
+  
+  .square-component p {
+    font-weight: bold; /* Mettre le texte en gras */
+    margin-bottom: 10px;
+  }
+  
+  .square-component a.btn-voir {
+    align-self: flex-end; /* Aligner le bouton à droite */
+    background-color: #ffdfe4;
+    color: #d80101;
+    padding: 10px 30px;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-left: 165px;
+  }
+  
+  .square-component a.btn-voir:hover {
+    background-color: #f7f7f7;
+  }
+  /************mes-cartes-nfc1***************/
+  .square-component1 {
+    width: 400px; /* Définir la largeur souhaitée */
+    height: 200px; /* Définir la hauteur souhaitée */
+    background-color: #fffefe; /* Définir la couleur de fond souhaitée */
+    border: 1px solid #ffffff; /* Bordure de 1 pixel solide de couleur noire */
+    border-radius: 5%; /* Forme de cercle avec un rayon de 50% */
+    text-align: left; /* Centrer le contenu horizontalement */
+    padding: 30px; /* Ajouter un espace intérieur au contenu */
+    box-shadow: 0px 2px 8px rgba(82, 82, 82, 0.5);
+  }
+  
+  .square-component1 img {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 0; /* Ajouter un espace en bas de l'image */
+    margin-top: 0px; /* Supprimer la marge supérieure de l'image */
+  }
+  
+  .square-component1 p {
+    font-weight: bold; /* Mettre le texte en gras */
+    margin-bottom: 10px;
+  }
+  
+  .square-component1 a.btn-voir {
+    align-self: flex-end; /* Aligner le bouton à droite */
+    background-color: #ffdfe4;
+    color: #d80101;
+    padding: 10px 30px;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-left: 165px;
+  }
+  
+  .square-component1 a.btn-voir:hover {
+    background-color: #f7f7f7;
+  }
+  /*****************************************/
+  
+  /************mes-cartes-nfc2***************/
+  .square-component2 {
+    width: 1000px;
+    height: 629px;
+    background-color: #fffefe;
+    border: 1px solid #ffffff;
+    border-radius: 2%;
+    text-align: left;
+    padding: 30px;
+    box-shadow: 0px 2px 8px rgba(82, 82, 82, 0.5);
+   
+
+  }
+  
+  .list-container {
+    margin-top: 10px;
+  }
+  
+  .list-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .header-item {
+    width: 25%;
+    text-align: center;
+    font-weight: bold;
+  }
+  
+  .separator {
+    margin: 8px 0;
+    border: none;
+    margin-left: 20px;
+    margin-right: 20px;
+    border-top: 1px solid #ccc;
+  }
+  
+  .list-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 10px;
+  }
+  
+  .item-column {
+    width: 25%;
+    
+  }
+  
+  .item-value {
+    text-align: center;
+  }
+  
+  .item-actions {
+    display: flex;
+    gap: 2px;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  
+  .btn-modifier,
+  .btn-supprimer {    
+    
+    border: none;
+    border-radius: 15px;
+  }
+  
+  .btn-modifier:hover,
+  .btn-supprimer:hover {
+    background-color: #b3005a;
+  }
+
+  
+  
+  /*****************************************/
+  /**************pop up delete**********************/
+  .confirmation-dialog {
+    width: 600px;
+    height: 300px; 
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #ffffff;
+    padding: 20px;
+    border: 1px solid #cccccc;
+    box-shadow: 0 2px 8px rgba(82, 82, 82, 0.5);
+    z-index: 9999;
+}
+
+.confirmation-dialog.show {
+    display: block;
+}
+
+.confirmation-dialog h2 {
+    margin-top: 0;
+}
+
+.confirmation-dialog p {
+    margin-bottom: 20px;
+}
+
+.confirmation-dialog .buttons {
+    text-align: center;
+}
+
+.confirmation-dialog .btn-confirm{
+    margin-top: 130px;
+    padding: 8px 10px;
+    background-color: #e483b3;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+}
+.confirmation-dialog .btn-confirm:hover {
+    background-color: #b3005a;
+  }
+.confirmation-dialog .btn-annuler {
+    padding: 10px 20px;
+    align-self: flex-end; /* Aligner le bouton à droite */
+    background-color: #ffdfe4;
+    color: #d80101;
+    text-decoration: none;
+    border-radius: 5px;
+}   
+.confirmation-overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 9998;
+}
+
+.confirmation-overlay.show {
+    display: block;
+}
+  /****************************************/
+ 
+    /*********************pop up update*********************/
+
+  .modification-dialog {
+    width: 600px;
+    height: 300px; 
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #ffffff;
+    padding: 20px;
+    border: 1px solid #cccccc;
+    box-shadow: 0 2px 8px rgba(82, 82, 82, 0.5);
+    z-index: 9999;
+  }
+  
+  .modification-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 400px; /* Modifier la largeur selon vos besoins */
+    padding: 20px;
+    background-color: #fff; /* Fond blanc */
+  }
+  
+  .modification-form {
+  
+  }
+  .btn-modifier-confirm{
+    margin-top: 20px;
+    padding: 8px 10px;
+    background-color: #e483b3;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+  }
+  .modification-dialog  .btn-annuler {
+    padding: 10px 20px;
+    align-self: flex-end; /* Aligner le bouton à droite */
+    background-color: #ffdfe4;
+    color: #d80101;
+    text-decoration: none;
+    border-radius: 5px;
+}  
+ 
+  /******************************************/
+  
+  /************pour la chart.js*************/
+  .square-component3 {
+    background-color: #fffefe;
+    padding: 15px;
+    box-shadow: 0px 2px 8px rgba(82, 82, 82, 0.5);
+    border: 1px solid #ffffff;
+    border-radius: 3%;
+    width: 500px;
+    height: 629px;
+    margin-left: 500px;
+}
+
+.square-component3 canvas {
+    width: 100%;
+    height: 200px;
+}
+
+  /**************************/
+
+  .table tr td {
+    border: none;
+  }
+  [type="radio"]:checked + label:after,
+  [type="radio"]:not(:checked) + label:after {
+    display: none;
+  }
+  [type="radio"]:checked + label::before,
+  [type="radio"]:not(:checked) + label::before {
+    display: none;
+  }
+  
+  .table tr td {
+    border: none;
+  }
+  [type="radio"]:checked + label:after,
+  [type="radio"]:not(:checked) + label:after {
+    display: none;
+  }
+  [type="radio"]:checked + label::before,
+  [type="radio"]:not(:checked) + label::before {
+    display: none;
+  }
+
+  :not(.input-group) > .bootstrap-select.form-control:not([class*="col-"]) {
+      width: 70%;
+  }
+ 
+  .table tr td {
+    border: none;
+  }
+  [type="radio"]:checked + label:after,
+  [type="radio"]:not(:checked) + label:after {
+    display: none;
+  }
+  [type="radio"]:checked + label::before,
+  [type="radio"]:not(:checked) + label::before {
+    display: none;
+  }
+
+  .grouppage-content {
+    margin: 16px;
+  }
+  .list-group {
+      display: block;}
+  .grouppage-item {
+    height: 90px;
+    display: flex;
+    background: white;
+    border-radius: 5px;
+    border: grey;
+    border-width: 1px;
+    border-style: solid;
+  }
+  .grouppage-item > * {
+    padding: 2px;
+    margin-left: 8px;
+    margin-right: 8px;
+  }
+  .grouppage-item button {
+    background: transparent;
+    border: none;
+    font-size: 12px;
+    float: right;
+  }
+  @media (min-width: 768px) {
+  .grouppage-content {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, 200px);
+      grid-gap: 20px;
+  }
+  }
+  .card-input:hover {
+    cursor: pointer;
+    box-shadow: 0 0 1px 1px #f20d0d;
+  }
+  .switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+  }
+  .switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  .avatar-img {
+   margin-right: 15px;
+  }
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    transition: 0.4s;
+  }
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    transition: 0.4s;
+  }
+  input:checked + .slider {
+    background-color: #D43347;
+  }
+  input:focus + .slider {
+    box-shadow: 0 0 1px #ccc;
+  }
+  input:checked + .slider:before {
+    transform: translateX(26px);
+  }
+  
+  /* Rounded sliders */
+  .slider.round {
+    border-radius: 34px;
+  }
+  .slider.round:before {
+    border-radius: 50%;
+  }
+  [type="radio"]:checked + label:after,
+  [type="radio"]:not(:checked) + label:after {
+    display: none;
+  }
+  [type="radio"]:checked + label::before,
+  [type="radio"]:not(:checked) + label::before {
+    display: none;
+  }
+  [type="radio"]:checked + label:after,
+  [type="radio"]:not(:checked) + label:after {
+    display: none;
+  }
+  [type="radio"]:checked + label::before,
+  [type="radio"]:not(:checked) + label::before {
+    display: none;
+  }
+
+  [type="radio"]:checked + label:after,
+  [type="radio"]:not(:checked) + label:after {
+    display: none;
+  }
+  [type="radio"]:checked + label::before,
+  [type="radio"]:not(:checked) + label::before {
+    display: none;
+  }
+
+  .grouppage-content {
+    margin: 16px;
+  }
+  .list-group {
+    display: block;
+  }
+  .grouppage-item {
+    height: 90px;
+    display: flex;
+    background: white;
+    border-radius: 5px;
+    border: grey;
+    border-width: 1px;
+    border-style: solid;
+  }
+  .grouppage-item > * {
+    padding: 2px;
+    margin-left: 8px;
+    margin-right: 8px;
+  }
+  .grouppage-item button {
+    background: transparent;
+    border: none;
+    font-size: 12px;
+    float: right;
+  }
+  @media (min-width: 768px) {
+  .grouppage-content {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, 200px);
+      grid-gap: 20px;
+  }
+  }
+  .card-input:hover {
+    cursor: pointer;
+    box-shadow: 0 0 1px 1px #f20d0d;
+  }
+  .switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+  }
+  .switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  .avatar-img {
+    margin-right: 15px;
+  }
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    transition: 0.4s;
+  }
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    transition: 0.4s;
+  }
+  input:checked + .slider {
+    background-color: #D43347;
+  }
+  input:focus + .slider {
+    box-shadow: 0 0 1px #ccc;
+  }
+  input:checked + .slider:before {
+    transform: translateX(26px);
+  }
+  
+  /* Rounded sliders */
+  .slider.round {
+    border-radius: 34px;
+  }
+  .slider.round:before {
+    border-radius: 50%;
+  }
+  </style>

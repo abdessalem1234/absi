@@ -11,7 +11,36 @@
     <link href="{{ asset('vendor/bootstrap-select/dist/css/bootstrap-select.min.css') }}" rel="stylesheet">
     <link href="{{ asset('vendor/jqvmap/css/jqvmap.min.css') }}" rel="stylesheet">
     <link href="{{ asset('vendor/chartist/css/chartist.min.css') }}" rel="stylesheet">
-    <link rel="stylesheet" href="{{ asset('css/styles.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/nfc.css') }}">
+
+    <!-------------------->
+    <meta name="csrf-token" content="c5r0a9KCDOb7trpxcKXuVJBj4YxyryPpMXr8RPRa">
+    <meta name="description" content="">
+    <!-- Favicon icon -->
+    <link rel="icon" type="image/png" sizes="16x16" href="https://www.cocuisinage.com/images/favicon.png">
+    <link href="https://www.cocuisinage.com/vendor/bootstrap-select/dist/css/bootstrap-select.min.css" rel="stylesheet">
+    <link href="https://www.cocuisinage.com/css/style.css" rel="stylesheet">
+    <link href="https://cdn.lineicons.com/2.0/LineIcons.css" rel="stylesheet">
+    <link href="https://www.cocuisinage.com/vendor/toastr/css/toastr.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+
+    <style>
+        .nav-header {
+            background-color: #DD2F6E;
+
+        }
+
+        .content-body {
+            padding-top: 7.5rem;
+        }
+
+        @media  only screen and (max-width: 1400px) {
+            [data-sidebar-style="full"][data-layout="vertical"] .deznav .metismenu>li>a {
+                font-size: 14px;
+            }
+        }
+    </style>
+    <!-------------------->
 @endsection
 
 @section('content')
@@ -24,12 +53,14 @@
             <h4>Tableau de bord</h4>
         </div>
 
-        <div class="row mx-4">
-            <div class="col-md-4 mb-4">
-                <div class="square-component1">
-                    <div class="logo">
-                        <img src="{{ asset('images/nfc/mes-cartes.png') }}" alt="Logo">
-                    </div>
+        <div class="row">
+            <div class="col-xl-3 col-lg-3 col-sm-6">
+            <div class="card overflow-hidden">
+            <div class="card-header media border-0 pb-0">
+				<div class="media-body">
+                <div class="card" style="width: 72px; height: 59px; background-color: rgb(254, 246, 207); padding-top: 0.7rem;">
+                    <i class="bi bi-credit-card-2-front-fill" style="color: rgb(213, 184, 31); font-size: 1.6rem; align-self: center;"></i>
+                </div>
                     <div class="content">
                         <h2>Total des cartes</h2>
                         <h3>{{ $totalCartes }}</h3>
@@ -37,10 +68,14 @@
                     </div>
                 </div>
             </div>
-            <div class="col-md-4 mb-4">
-                <div class="square-component1">
-                    <div class="logo">
-                        <img src="{{ asset('images/nfc/ma-carte-visite.png') }}" alt="Logo">
+            </div>
+            </div>
+            <div class="col-xl-3 col-lg-3 col-sm-6">
+            <div class="card overflow-hidden">
+            <div class="card-header media border-0 pb-0">
+				<div class="media-body">
+                    <div class="card" style="width: 72px; height: 59px; background-color: rgb(252, 234, 240); padding-top: 0.7rem;">
+                        <i class="bi bi-exclamation-circle-fill" style="color: rgb(221, 47, 110); font-size: 1.6rem; align-self: center;"></i>
                     </div>
                     <div class="content">
                         <h2>Cartes utilisées</h2>
@@ -49,10 +84,14 @@
                     </div>
                 </div>
             </div>
-            <div class="col-md-4 mb-4">
-                <div class="square-component1">
-                    <div class="logo">
-                        <img src="{{ asset('images/nfc/mes-fiches-client.png') }}" alt="Logo">
+            </div>
+            </div>
+            <div class="col-xl-3 col-lg-3 col-sm-6">
+            <div class="card overflow-hidden">
+            <div class="card-header media border-0 pb-0">
+				<div class="media-body">
+                    <div class="card" style="width: 72px; height: 59px; background-color: rgba(16, 163, 129, 0.13); padding-top: 0.7rem;">
+                        <i class="bi bi-check-circle-fill" style="color: rgb(16, 163, 127); font-size: 1.6rem; align-self: center;"></i>
                     </div>
                     <div class="content">
                         <h2>Cartes disponibles</h2>
@@ -61,9 +100,11 @@
                     </div>
                 </div>
             </div>
+            </div>
+            </div>
             
-            <div class="col-md-4 mb-4">
-                <div class="square-component2">
+            <div class="col-xl-7 col-xxl-8 col-lg-8 col-sm-12">
+                <div class="card">
                     <div class="list-container">
                         <div class="list-header">
                             <div class="header-item">
@@ -88,12 +129,26 @@
                                 <div class="item-column">
                                     <p class="item-value">{{ $client->name }}</p>
                                 </div>
-                                <div class="item-column">
-                                    <p class="item-value">{{ $client->availability === 'disponible' ? 'Disponible' : 'Utilisé' }}</p>
+                                <div class="item-column" style="display: flex; align-items: center;">
+                                    @if($client->availability === 'disponible')
+                                        <div class="card btn" style="width: 100%; height: 59px; background-color: rgb(16, 163, 129, 0.13); padding-top: 0.7rem; cursor: pointer;color: rgb(97, 197, 97);">
+                                            Disponible
+                                        </div>
+                                    @elseif($client->availability === 'utilisé')
+                                        <div class="card btn " style="width: 100%; height: 59px; background-color: rgb(252, 234, 240); padding-top: 0.7rem; cursor: pointer;color: rgb(221, 47, 110); ">
+                                            Utilisé
+                                        </div>
+                                    @endif
                                 </div>
+
                                 <div class="item-column">
                                     <div class="item-actions">
-                                          <button class="btn-modifier">Modifier</button>
+                                   
+                             <!---------------update------------->
+                                    <div class="card btn btn-modifier" style="width: 72px; height: 59px; background-color: rgb(254, 246, 207); padding-top: 0.7rem; cursor: pointer;">
+                                         <i class="bi bi-pen" style="color: rgb(213, 184, 31); font-size: 1.6rem; align-self: center;"></i>
+                                    </div>
+                            <!------------------------------------>
                                          <!---------------pop up update------------->
                                           <div id="modification-dialog" class="modification-dialog">
                                             <div class="modification-content">
@@ -120,7 +175,7 @@
                                                 </div>
                                                 <div class="form-actions">
                                                     <button type="submit" class="btn-modifier-confirm">Modifier</button>
-                                                    <button type="button" class="btn-annuler">Annuler</button>
+                                                    <button id="btn-annuler" class="btn-annuler" type="button">Annuler</button>
                                                 </div>
                                                 </form>
                                             </div>
@@ -130,7 +185,10 @@
                                           <form action="{{ route('clients.destroy', $client->id) }}" method="POST" class="delete-form">
                                             @csrf
                                             @method('DELETE')
-                                            <button type="button" class="btn-supprimer">Supprimer</button>
+                                            <div class="card btn btn-supprimer" style="width: 72px; height: 59px; background-color: rgb(252, 234, 240); padding-top: 0.7rem; cursor: pointer;">
+                                               <i class="bi bi-trash3" style="color: rgb(221, 47, 110); font-size: 1.6rem; align-self: center;"></i>
+                                            </div>
+                                            
                                         </form>
                                         <div class="confirmation-overlay"></div>
                                         <div id="confirmation-dialog" class="confirmation-dialog">
@@ -152,12 +210,16 @@
                     </div>
                 </div>
             </div>
-            <div class="order-md-12 ">
-                <div class="square-component3">
-                    <h3>Résumé des cartes</h3>
-                    <p>Vous trouverez ici le résumé des cartes fidélité</p>
+            <div class="col-xl-3 col-xxl-4 col-lg-4 col-sm-12">
+                <div class="card">
+				<div class="card-header">
+                    <h4 class="card-title">Résumer des cartes</h4>
+                </div>
+                <div class="card-body">
                     <canvas id="statistique-carte"></canvas>
                 </div>
+            </div>
+            
             </div>
         </div>
     </div>
@@ -174,7 +236,7 @@
         document.addEventListener('DOMContentLoaded', function() {
             var ctx = document.getElementById('statistique-carte').getContext('2d');
             var myChart = new Chart(ctx, {
-                type: 'doughnut',
+                type: 'pie',
                 data: {
                     labels: ['Disponibles', 'Utilisées'],
                     datasets: [{
